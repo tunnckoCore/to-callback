@@ -34,12 +34,13 @@ test('should throw if last argument not a function', function (done) {
 
 test('should convert result-first to error-first callback', function (done) {
   var onCallback = toCallback(emitter.on.bind(emitter))
-  onCallback('foo', function errFirstCb (err, res) {
+  onCallback('foo', function errFirstCb (err, aa, bb) {
     test.strictEqual(err, null)
-    test.strictEqual(res, 123)
+    test.strictEqual(aa, 123)
+    test.strictEqual(bb, 444)
     done()
   })
-  emitter.emit('foo', 123)
+  emitter.emit('foo', 123, 444)
 })
 
 test('should get err if result-first API throws', function (done) {

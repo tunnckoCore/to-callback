@@ -59,8 +59,9 @@ module.exports = function resultFirst2callback (fn) {
       throw new Error('to-callback: expect error-first callback')
     }
 
-    function resFirstCb (res) {
-      errFirstCb(null, res)
+    function resFirstCb (/* arg1, arg2, arg3 */) {
+      var args = [].slice.call(arguments)
+      errFirstCb.apply(null, [null].concat(args))
     }
 
     tryCatch(fn, {
