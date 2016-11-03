@@ -50,6 +50,10 @@ test('should get err if result-first API throws', function (done) {
   var errfirst = toCallback(resfirst)
   errfirst(11, function (err) {
     test.strictEqual(err && err.message, 'some err')
-    done()
+    errfirst(22, function (err, res) {
+      test.strictEqual(err, null)
+      test.strictEqual(res, 22)
+      done()
+    })
   })
 })
