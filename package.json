@@ -66,6 +66,10 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "engines": {
+    "node": ">=4",
+    "npm": ">=3"
+  },
   "verb": {
     "run": true,
     "toc": true,
@@ -73,12 +77,26 @@
     "tasks": [
       "readme"
     ],
+    "related": {
+      "list": [
+        "pify",
+        "rfpify",
+        "to-promise",
+        "try-catch-core",
+        "try-catch-callback",
+        "always-done"
+      ]
+    },
     "lint": {
       "reflinks": true
-    }
-  },
-  "engines": {
-    "node": ">=4",
-    "npm": ">=3"
+    },
+    "reflinks": [
+      "always-done",
+      "async-done",
+      "dezalgo",
+      "once",
+      "rfpify",
+      "try-catch-core"
+    ]
   }
 }
