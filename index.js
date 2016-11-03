@@ -23,7 +23,7 @@ var tryCatch = require('try-catch-callback')
  * ```js
  * var EventEmitter3 = require('eventemitter3')
  * var toCallback = require('to-callback')
- * var emitter = new EventEmitter3
+ * var emitter = new EventEmitter3()
  *
  * // classic "result-first" case
  * emitter.on('foo', function (a, b) {
