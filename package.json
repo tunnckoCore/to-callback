@@ -37,7 +37,30 @@
   "files": [
     "index.js"
   ],
-  "keywords": [],
+  "keywords": [
+    "api",
+    "apis",
+    "callback",
+    "cb",
+    "convert",
+    "create",
+    "err",
+    "errfirst",
+    "error",
+    "errorfirst",
+    "first",
+    "hybridables",
+    "hybrids",
+    "modify",
+    "promisify",
+    "res",
+    "resfirst",
+    "result",
+    "resultfirst",
+    "tocallback",
+    "transform",
+    "util"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
