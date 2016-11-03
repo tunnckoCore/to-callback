@@ -10,7 +10,7 @@
 var tryCatch = require('try-catch-callback')
 
 module.exports = function resultFirst2callback (fn) {
-  return function () {
+  return function errorFirstFn () {
     var args = [].slice.call(arguments)
     var errFirstCb = args[args.length - 1]
 
