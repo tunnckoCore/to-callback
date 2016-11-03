@@ -1,6 +1,6 @@
 {
   "name": "to-callback",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts result-first callbacks to classic (node.js-style) error-first callbacks with 3 lines of code. Useful when you want to promisify result-first APIs (like emitter.on). Inspired by [rfpify][] and probably used in it.",
   "repository": "tunnckoCore/to-callback",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
